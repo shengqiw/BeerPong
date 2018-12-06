@@ -4,3 +4,7 @@
 ## It is online multiplayer!
 
 ## If you don't know the rules, proceed to the _House Rules_ Page
+
+### Solo Project by SHENGQI WANG in CS252: Systems Programming 
+### Email: wang2741@purdue.edu
+
