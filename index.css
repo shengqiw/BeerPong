@@ -37,7 +37,7 @@ header,
     width: 120px;
 }
 #joinModal {
-    background-color: navy;
+    /* background-color: navy; */
     position: absolute;
     top: 20%;
     left: 50%;
@@ -47,8 +47,8 @@ header,
   .modal-content {
     position: absolute;
     /* top: 40%; */
-    height: 100%;
-    background-color: lightseagreen;
+    height: 60%;
+    background-color: rgb(197, 243, 231);
   }
   .input-center {
       position: absolute;
