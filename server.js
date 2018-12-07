@@ -15,7 +15,9 @@ app.get('/', function(req, res){
 
 io.sockets.on('connection', function(socket) {
     connections.push(socket);
+    
     console.log('Connected: %s sockets connected', connections.length);
+    io.sockets.emit('new message', {msg: "new user connected"});
 
     //Disconnect
     socket.on('disconnect', function(data){
