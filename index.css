@@ -1,0 +1,59 @@
+html,
+body,
+header,
+#bg {
+    height: 100%;
+}
+
+#bg {
+  z-index: 1;
+  height: 100%;
+  background: url("img/beer_pong.png")no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  position: relative;
+
+}
+
+#above {
+    height: 100%;
+    z-index: 2;
+}
+
+#pic_logo {
+    height: auto;
+    width: 35%;
+    margin-bottom: 20px;
+}
+
+.my-center {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 2;
+    width: 120px;
+}
+#joinModal {
+    background-color: navy;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 30%;
+    transform: translateX(-50%);
+  }
+  .modal-content {
+    position: absolute;
+    /* top: 40%; */
+    height: 100%;
+    background-color: lightseagreen;
+  }
+  .input-center {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      border: 1px solid gray;
+  }
