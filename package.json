@@ -1,0 +1,23 @@
+{
+  "name": "cs252_final_project",
+  "version": "1.0.0",
+  "description": "## If you don't know the rules, proceed to the _Rules_ Page in game",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shengqiw/BeerPong.git"
+  },
+  "author": "Shengqi",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "*",
+    "express": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/shengqiw/BeerPong/issues"
+  },
+  "homepage": "https://github.com/shengqiw/BeerPong#readme"
+}

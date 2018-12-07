@@ -31,7 +31,7 @@ header,
 .my-center {
     position: relative;
     top: 40%;
-    left: 50%;
+    left: 40%;
     transform: translateX(-50%);
     margin: 2;
     width: 120px;
