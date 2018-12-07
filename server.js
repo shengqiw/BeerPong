@@ -3,7 +3,7 @@ var app = express();
 var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
 var path = require('path');
-app.use(express.static(path.join(__dirname, "")));
+//app.use(express.static(path.join(__dirname, "")));
 users = [];
 connections = [];
 
