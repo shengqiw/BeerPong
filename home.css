@@ -18,17 +18,17 @@ header,
     z-index: 2;
 }
 #img_table {
-    height: 100%;
+    height: 80%;
     position: relative;
     max-width: 100%;
     left: 40%;
     transform: translateX(-50%);
-    margin-top: 75px;
+    margin-top: 50px;
 }
 
 #img_ball {
     position: relative;
     height: 30px;
     width: 30px;
-    top: 100%;
+    top: 80%;
 }

@@ -9,6 +9,15 @@
     <body>
         <div id="bg" class="view">
             <div id="above" class="container">
+                <div class="row mt-2">
+                    <h2 class="col-4">AQUA PONG</h2>
+                    <h4 class="col-2">Timer:</h4>
+                    <h4 class="col-2" id="id_timer">10 secs</h4>
+                    <button type="button" class="btn btn-primary" id="btn_begin">Begin!</button>
+                </div>
+                <div class="row">
+                    <button data-toggle="modal" data-target="#rulesModal" type="button" class="btn my-center mt-1">See Rules</button>
+                </div>
                 <div class="row">
                     <div class="col-8">
                         <img id="img_table" src="img/pong_board.png" class="hoverable">
@@ -17,24 +26,51 @@
                         <img id="img_ball" src="img/ping_pong_ball.png" class="hoverable">
                     </div>
                 </div>
-                <div class="row mt-5 pt-5 ml-5 pl-5">
-                    <button id="btn_throw" type="button" class="col-2 btn btn-primary">Throw</button>
+                <div class="row mt-1 ml-5 pl-5">
+                    <button id="btn_throw" type="button" class="col-2 btn btn-primary" style="display: none">Throw</button>
                     <div class="col-4 offset-1">
                         <div class="row">
-                            <h3 class="col-6">SCORE:</h3>
-                            <h3 id="id_score" class="col-6">0</h3>
+                            <h3 class="col-6 info" style="display: none">SCORE:</h3>
+                            <h3 id="id_score" class="col-6 info" style="display: none">0</h3>
                         </div>
                     </div>
                     <div class="col-4 offset-1">
                             <div class="row">
-                                <h3 class="col-6">Throws:</h3>
-                                <h3 id="id_throws" class="col-6">3</h3>
+                                <h3 class="col-6 info" style="display: none">Throws:</h3>
+                                <h3 id="id_throws" class="col-6 info" style="display: none">3</h3>
                             </div>
                     </div>
                 </div>
             </div>
         </div>
-
+        
+        <!-- Modal -->
+        <div class="modal fade" id="rulesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Rules for Aqua Pong Baseball</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <p>This is not your traditional beer pong game!</p>
+                    
+                    <p>1. Click Begin to start the game</p>
+                    <p>2. Each game will be cut off at 10 seconds</p>
+                    <p>3. Click "Throw" button to throw the pong ball</p>
+                    <p>4. Time the click with the moving pong ball</p>
+                    <p>5. 3 misses and the game is over</p>
+                    <p>6. Score as many points as possible before time limit or 3 misses</p> 
+                    <p>7. Share and compete with your friends!</p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
 
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>        <!-- Bootstrap JS  -->

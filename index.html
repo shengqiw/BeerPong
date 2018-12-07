@@ -10,23 +10,32 @@
         <div id="bg" class="view">
             <div id="above">
                 <button data-toggle="modal" data-target="#joinModal" type="button" class="btn btn-primary my-center"> Join </button>
-                <button type="button" class="btn btn-success my-center"><a href="home.html">Create</a></button>
+                <a href="home.html"><button type="button" class="btn btn-success my-center">Create</button></a>
             </div>
         </div>
 
 
-        <div class="modal fade" id="joinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-content text-center modal-center">
-                <input type="text" class="mt-4 mb-4 w-50 input-center" placeholder="Lobby Key Code"></input>
-                <button type="button" class="btn btn-success mt-4 pr-4 my-center"><a href="create"></a>Join!</button>
+        <div class="modal" id="joinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-content text-center modal-center container">
+                <div class="row w-100 text-center">
+                    <input type="text" class="m-5 row w-50 text-center" placeholder="Lobby Key Code"></input>
+                </div>
+                <div class="row">
+                    <a class="col-6" href="home.html"><button type="button" class="btn btn-success m-2">Join Game</button></a>
+                    <button type="button" class="btn btn-secondary m-2 offset-3 col-4" data-dismiss="modal">Close</button>
+                </div>
+                
             </div>
         </div>
 
         <!-- Scripts -->
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>        <!-- Bootstrap JS  -->
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>        Bootstrap JS  -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        
     </body>
 
 </html>
