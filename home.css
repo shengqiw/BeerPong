@@ -1,0 +1,34 @@
+html,
+body,
+header,
+#bg {
+    height: 100%;
+}
+
+#bg {
+  z-index: 1;
+  height: 100%;
+  background-color: white;
+  position: relative;
+
+}
+
+#above {
+    height: 65%;
+    z-index: 2;
+}
+#img_table {
+    height: 100%;
+    position: relative;
+    max-width: 100%;
+    left: 40%;
+    transform: translateX(-50%);
+    margin-top: 75px;
+}
+
+#img_ball {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    top: 100%;
+}
